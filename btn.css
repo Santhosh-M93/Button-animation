@@ -1,0 +1,41 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: content-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    gap:30px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color:#6734eb;
+}
+.btn{
+    color:#eb6e34;
+    border:1px solid #34eb99;
+    background-color: transparent;
+    outline: none;
+    width:200px;
+    padding:10px 0;
+    position: relative;
+    cursor:pointer;
+}
+.layer{
+    background-color: #34eb99;
+    position: absolute;
+    width:0%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: 0.4s linear;
+}
+.btn:hover{
+    border:none;
+}
+.btn:hover .layer{
+    width:100%;
+}
